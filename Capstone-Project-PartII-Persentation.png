@@ -1,0 +1,46 @@
+Coursera Data Science Capstone Project - Part-II
+========================================================
+author: Joe Okelly
+date: October 7, 2024
+
+Overview
+========================================================
+
+If you wish t o try out the app, clic
+k on the link https://joejokelly.shinyapps.io/Capstone-Project-work/
+
+- The app predicts the next word as the user type a word or a group of words.
+- The app used the Swiftkey technology
+
+How To Use the App
+========================================================
+
+Instructions
+
+![Capstone](Capstone.png)
+
+
+
+
+
+
+Getting & Cleaning the Data
+========================================================
+
+The original data was sampled from three sources, (blogs, twitter and new) which is later merged into one
+
+- Next, data cleaning is done, stipping white space, conversion to lowercase, removing punctuation and numbers. 
+  Later after the process is completed, n-grams are created (Quadgram, Trigram and Bigram).
+- Next, the count tables are extracted from N-Grams, and sorted with frequency in descending order.
+- The final process is the n-grams are saved into R-compressed files, (.RData files).
+
+
+Algorithm used 
+========================================================
+
+- Checks if highest-order (in this case, n=4) n-gram has been seen. If not "degrades" to a lower-order model 
+  (n=3, 2); we would use even higher orders, the maximum ShinyApp size is 100mb.
+
+
+
+
